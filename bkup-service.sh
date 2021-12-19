@@ -1,4 +1,4 @@
-#/bin/bash
+#!/bin/bash
 
 # Create Backup of Database
 # See https://kolibri.readthedocs.io/en/latest/manage/command_line.html
