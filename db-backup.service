@@ -1,5 +1,5 @@
 [Unit]
-Description=My Script Service
+Description=DB Backup Service
 Wants=network-online.target
 After=network-online.target
 
@@ -7,7 +7,7 @@ After=network-online.target
 Type=simple
 User=pi
 WorkingDirectory=/home/pi
-ExecStart=/home/pi/my_script.sh
+ExecStart=/home/pi/backup-service.sh
 ExecStartPre=/bin/sh -c 'until ping -c1 google.com; do sleep 1; done;'
 
 [Install]
