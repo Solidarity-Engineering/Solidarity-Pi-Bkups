@@ -7,7 +7,7 @@ After=network-online.target
 Type=simple
 User=pi
 WorkingDirectory=/home/pi
-ExecStart=/home/pi/backup-service.sh
+ExecStart=/home/pi/bkup-service.sh
 ExecStartPre=/bin/sh -c 'until ping -c1 google.com; do sleep 1; done;'
 
 [Install]
